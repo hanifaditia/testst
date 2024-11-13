@@ -29,10 +29,10 @@ st.session_state.selected_menu = st.sidebar.selectbox(
 
 dic = {"test" : st.secrets.test}
 
-print(st.secrets.test)
-print("dict")
-print(dic)
-print(dic["test"])
+st.markdown(st.secrets.test)
+st.markdown("dict")
+st.markdown(dic)
+st.markdown(dic["test"])
 
 # Sort the DataFrame
 st.session_state.df = st.session_state.df.sort_values('Month')
