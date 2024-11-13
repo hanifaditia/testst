@@ -29,7 +29,7 @@ st.session_state.selected_menu = st.sidebar.selectbox(
 
 dic = {"test" : st.secrets.test}
 
-st.markdown(st.secrets.test)
+st.markdown(str(st.secrets.test.ToString))
 st.markdown("dict")
 st.markdown(dic)
 st.markdown(dic["test"])
