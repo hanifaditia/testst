@@ -32,7 +32,7 @@ dic = {"test" : st.secrets.test}
 print(st.secrets.test)
 print("dict")
 print(dic)
-print(dic.test)
+print(dic["test"])
 
 # Sort the DataFrame
 st.session_state.df = st.session_state.df.sort_values('Month')
